@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <form action="/" method="post" class="post-form">
+            {% csrf_token %}
+            <input type="text" name="city">
+            <input type="submit">
+        </form>
+        <h1>
+           City: {{location}} <br>
+           Country: {{country}}
+
+          
+        </h1>
+        <h2>Temp: {{temp}}</h2>
+    </body>
+</html>
